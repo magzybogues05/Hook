@@ -16,8 +16,10 @@ const Library = () => {
     })
   },[])
   
-  const playPlaylist=(id)=>{
+  const navigate=useNavigate();
 
+  const playPlaylist=(id)=>{
+      navigate('/player',{state:{id:id}})
   }
 
   return (
